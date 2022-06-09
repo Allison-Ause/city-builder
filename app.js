@@ -1,5 +1,10 @@
 // import needed modules
-
+let city = {
+    name: 'Neige',
+    climate: 'glacial',
+    architecture: 'romantic',
+    slogan: []
+};
 // state
 
 // components

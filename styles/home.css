@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+#city-display {
+    text-align: center;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.glacial {
+    background-color: blue;
+    color: white;
+}
+
+.temperate {
+    background-color: darkslategray;
+    color: peachpuff;
+}
+
+.tropical {
+    background-color: rgb(226, 167, 220);
+    color: rgb(7, 103, 112);
+}
+
+.romantic {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.gothic {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.futuristic {
+    font-family: 'Orbitron', sans-serif;
+}
