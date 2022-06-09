@@ -23,37 +23,52 @@
 
         <section id="city-builder">
             <h1>City Details</h1>
-            <label>
+            <label for="city-name-input">
                 City Name: <input id="city-name-input">
             </label>
-            <label>Climate:</label>
+            <label for="climate-select">Climate:</label>
                 <select id="climate-select">
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
+                    <option value="glacial">Glacial</option>
+                    <option value="temperate">Temperate</option>
+                    <option value="tropical">Tropical</option>
                 </select>
-            <label>Architecture:</label>
+            <label for="architecture-select">Architecture:</label>
                 <select id="architecture-select">
-                    <option>X</option>
-                    <option>Y</option>
-                    <option>Z</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="gothic">Gothic</option>
+                    <option value="futuristic">Futuristic</option>
                 </select>
-            <label>City Slogan:</label>
+            <label for="slogan-textarea">City Slogan:</label>
                 <textarea id="slogan-textarea"></textarea>
-            
+
             <button id="add-slogan-button">Add Slogan</button>
             <button id="save-city-button">Save to Favorites</button> 
-            
         </section>
+        
 
         <section id="city-display">
             <h1>Your City:</h1>
+            <h2></h2> <!---City Name-->
+                <div id="city-image-display">
+            <img src=""> <!---Climate-->
+            <img src=""> <!---Architecture-->
+                </div>
+            <p></p> <!---City Slogan(s)-->
         </section>
 
         <section id="saved-display">
             <h1>Your Saved Cities</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td> <!---City Name-->
+                        <td></td> <!---Climate-->
+                        <td></td> <!---Architecture-->
+                        <td></td> <!---Number of City Slogans-->
+                    </tr>
+                </thead>
+            </table>
         </section>
-
 
     </main>
 
