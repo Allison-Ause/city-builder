@@ -1,1 +1,122 @@
-/* add css for index.html */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+
+#title {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(127, 187, 255);
+    border-radius: 60%;
+    font-family: 'Sanchez', serif;
+    font-size: 3rem;
+    color: rgb(59, 70, 73)
+}
+
+#city-builder {
+        padding-bottom: 75px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        font-family: 'Sanchez', serif;
+}
+
+
+#city-display {
+    display: grid;
+    justify-items: center;
+    border-radius: 20%;
+    width: 800px;
+    font-size: 45px;
+}
+
+#city-display h1 {
+    font-size: 25px;
+}
+
+#city-image-display {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+#slogan-list {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.default {
+    text-align: center;
+    width: 200px;
+    padding-bottom: 50px;
+    border-radius: 0%;
+    background-color: blanchedalmond
+}
+
+.glacial {
+    background-color: rgb(17, 17, 130);
+    color: rgb(199, 247, 253);
+}
+
+.temperate {
+    background-color: darkslategray;
+    color: peachpuff;
+}
+
+.tropical {
+    background-color: rgb(245, 134, 234);
+    color: rgb(45, 7, 112);
+}
+
+.romantic {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.gothic {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.futuristic {
+    font-family: 'Orbitron', sans-serif;
+}
+input {
+    font-family: 'Sanchez', serif;
+}
+
+button {
+    font-family: 'Sanchez', serif;
+}
+
+#saved-display {
+    padding-bottom: 150px;
+    font-family: 'Sanchez', serif;
+}
+
+#saved-table {
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px dotted black;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    border: 1px solid rgb(217, 141, 18);
+    background-color: peachpuff
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
