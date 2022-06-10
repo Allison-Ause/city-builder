@@ -2,9 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+
+
 #city-builder {
-    padding-bottom: 75px;
+        padding-bottom: 75px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        
 }
+
+
+#city-display {
+    display: grid;
+    justify-items: center;
+}
+
+
 
 .default {
     text-align: center;
