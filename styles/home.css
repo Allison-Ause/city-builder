@@ -16,9 +16,8 @@
 #city-display {
     display: grid;
     justify-items: center;
+    grid-template-columns: 50% 50%;
 }
-
-
 
 .default {
     text-align: center;
@@ -53,4 +52,35 @@
 
 .futuristic {
     font-family: 'Orbitron', sans-serif;
+}
+
+#saved-display {
+    padding-bottom: 150px;
+}
+
+#saved-table {
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px dotted black;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    border: 1px solid rgb(217, 141, 18);
+    background-color: peachpuff
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
