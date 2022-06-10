@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+#city-builder {
+    padding-bottom: 75px;
+}
 
-#city-display {
+.default {
     text-align: center;
     width: 400px;
-    padding: 15px;
+    padding: 30px;
     border-radius: 10%;
+    background-color: blanchedalmond
 }
 
 .glacial {

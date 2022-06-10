@@ -16,6 +16,7 @@ const [addSloganButton, saveCityButton] = cityBuilder.querySelectorAll('button')
 const cityDisplay = document.getElementById('city-display');
 const cityNameDisplay = cityDisplay.querySelector('h2');
 const [climateImage, architectureImage] = cityDisplay.querySelectorAll('img');
+
 const sloganList = cityDisplay.querySelector('ul');
 
 //Display Function
@@ -51,10 +52,11 @@ addSloganButton.addEventListener('click', () => {
 
 
 function displayCity() {
-    console.log(city.name);
     cityNameDisplay.textContent = city.name;
     climateImage.src = 'assets/climates/' + city.climate + '.webp';
     architectureImage.src = 'assets/architecture/' + city.architecture + '.webp';
+    cityDisplay.classList.add(climateSelect.value);
+    cityDisplay.classList.add(architectureSelect.value);
 }
 
 function handleAddSlogan() {
