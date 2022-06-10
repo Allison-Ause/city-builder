@@ -53,6 +53,7 @@ addSloganButton.addEventListener('click', () => {
 
 
 function displayCity() {
+    cityDisplay.classList.value = '';
     cityNameDisplay.textContent = city.name;
     climateImage.src = 'assets/climates/' + city.climate + '.webp';
     architectureImage.src = 'assets/architecture/' + city.architecture + '.webp';
@@ -68,7 +69,7 @@ function handleAddSlogan() {
 
 function displaySlogans() {
     sloganList.innerHTML = '';
-
+    
     for (const slogan of city.slogan) {
         const li = document.createElement('li');
         li.textContent = slogan;
@@ -76,10 +77,45 @@ function displaySlogans() {
     }
 }
 
+let cities = [];
+
+addCityButton.addEventListener('click', () => {
+    cities.push(city);
+    displaySavedCities();
+
+    city = getDefaultCity();
+    displayBuilder();
+    displayCity();
+});
+
+function getDefaultCity() {
+    const defaultCity = {
+        name: '',
+        climate: 'glacial',
+        architecture: 'romantic',
+        slogan: []
+    };
+    return defaultCity;
+}
+
 const savedDisplay = document.getElementById('saved-display');
 const cityTable = savedDisplay.querySelector('tbody');
 
+function displaySavedCities() {
 
+    cityTable.innerHTML = '';
+
+    for (const city of cities) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+        <td>${city.name}</td>
+        <td>${city.climate}</td>
+        <td>${city.architecture}</td>
+        <td>${city.slogan.length}</td>`;
+
+        cityTable.append(tr);
+    }
+}
 
 // state
 
