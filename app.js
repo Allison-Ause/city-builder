@@ -11,13 +11,13 @@ const cityBuilder = document.getElementById('city-builder');
 const cityNameInput = cityBuilder.querySelector('input');
 const [climateSelect, architectureSelect] = cityBuilder.querySelectorAll('select');
 const sloganTextArea = cityBuilder.querySelector('textarea');
-const [addSloganButton, saveCityButton] = cityBuilder.querySelectorAll('button');
+const [addSloganButton, addCityButton] = cityBuilder.querySelectorAll('button');
 
 const cityDisplay = document.getElementById('city-display');
 const cityNameDisplay = cityDisplay.querySelector('h2');
 const [climateImage, architectureImage] = cityDisplay.querySelectorAll('img');
-
 const sloganList = cityDisplay.querySelector('ul');
+
 
 //Display Function
 function displayBuilder() {
@@ -51,6 +51,7 @@ addSloganButton.addEventListener('click', () => {
 });
 
 
+
 function displayCity() {
     cityNameDisplay.textContent = city.name;
     climateImage.src = 'assets/climates/' + city.climate + '.webp';
@@ -75,7 +76,8 @@ function displaySlogans() {
     }
 }
 
-//create event listener for button (save city.slogan to array) for/of loop inside displayCity to display all the slogans
+const savedDisplay = document.getElementById('saved-display');
+const cityTable = savedDisplay.querySelector('tbody');
 
 
 
